@@ -1,11 +1,12 @@
-using Fibonacci;
-using System;
+﻿using DynamicProgramming.Fibonacci;
 using Xunit;
+
 
 namespace DynamicProgramming.UnitTests
 {
-    public class FibonacciTests
+    public class MemoizedFibonacciTests
     {
+
         [Fact]
         public void BruteForceFibonacci_Returns_Base_Cases()
         {
@@ -22,22 +23,15 @@ namespace DynamicProgramming.UnitTests
             Assert.Equal(0, testee.Fib(0));
         }
 
-        [Fact]
-        public void BruteForceFibonacci_Negatives_Throw_ArgumentException()
-        {
-            var testee = new BruteForceFibonacci();
-            Assert.Throws<ArgumentOutOfRangeException>( () => testee.Fib(-1));
-        }
-
         [Theory]
         [InlineData(0, 0)]
         [InlineData(3, 2)]
         [InlineData(4, 3)]
         [InlineData(5, 5)]
         [InlineData(6, 8)]
-        public void BruteForceFibonacci_Calculates_Correctly(int n, int expected)
+        public void MemoizedFibonacci_Calculates_Correctly(int n, int expected)
         {
-            var testee = new BruteForceFibonacci();
+            var testee = new MemoizedFibonacci();
             Assert.Equal(expected, testee.Fib(n));
         }
     }

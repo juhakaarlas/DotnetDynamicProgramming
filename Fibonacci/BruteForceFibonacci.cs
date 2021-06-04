@@ -1,17 +1,17 @@
-﻿using DynamicProgramming.Fibonacci;
-using System;
+﻿using System;
 
-namespace Fibonacci
+namespace DynamicProgramming.Fibonacci
 {
     /// <summary>
     /// This class implements the calculation of the Nth Fibonacci number with brute force and recursion.
     /// It calculates the result in O(2^n) time and O(n) (stack) space.
     /// </summary>
-    public class BruteForceFibonacci : IFibonacci
+    public class BruteForceFibonacci : FibonacciBase
     {
         /// <inheritdoc />
-        public int Fib(int n)
+        public override int Fib(int n)
         {
+            //Leaving the duplicate code here as an intro instead of utilizing the 
             //We don't suppport the generalized series
             if (n < 0) throw new ArgumentOutOfRangeException();
             
