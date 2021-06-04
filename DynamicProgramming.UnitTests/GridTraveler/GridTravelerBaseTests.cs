@@ -16,7 +16,7 @@ namespace DynamicProgramming.UnitTests.GridTraveler
         [Fact]
         public void Base_Class_Handles_Singularity()
         {
-            var testee = new BasicGridTraveler();
+            var testee = new BruteForceGridTraveler();
             Assert.Equal(0, BaseCase(0, 1));
             Assert.Equal(0, BaseCase(1, 0));
         }
