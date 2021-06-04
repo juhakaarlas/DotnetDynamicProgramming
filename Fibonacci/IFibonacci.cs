@@ -7,6 +7,6 @@
         /// </summary>
         /// <param name="n">The number n for which the Fibonacci number should be calculated.</param>
         /// <returns>The Nth Fibonacci number</returns>
-        int Fib(int n);
+        long Fib(long n);
     }
 }
