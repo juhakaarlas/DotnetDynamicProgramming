@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DynamicProgramming.CanSum
+﻿namespace DynamicProgramming.CanSum
 {
     /// <summary>
     /// Problem Statement (from freeCodeCamp.org)

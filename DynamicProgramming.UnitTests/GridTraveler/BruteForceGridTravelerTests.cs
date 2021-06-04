@@ -3,7 +3,10 @@ using Xunit;
 
 namespace DynamicProgramming.UnitTests.GridTraveler
 {
-   public class BruteForceGridTravelerTests
+    /// <summary>
+    /// Test dataset from <see href="https://youtu.be/oBt53YbR9Kk?t=2958">freeCodeCamp.org video</see>.
+    /// </summary>
+    public class BruteForceGridTravelerTests
     {
         [Fact]
         public void Basic_Traveler_Handles_Base_Case()
