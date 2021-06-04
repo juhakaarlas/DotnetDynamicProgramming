@@ -3,6 +3,9 @@ using Xunit;
 
 namespace DynamicProgramming.UnitTests.GridTraveler
 {
+    /// <summary>
+    /// Test data from <see href=""/>
+    /// </summary>
     public class MemoizedGridTravelerTests
     {
         [Theory]
@@ -15,6 +18,5 @@ namespace DynamicProgramming.UnitTests.GridTraveler
             var testee = new MemoizedGridTraveler();
             Assert.Equal(expected, testee.GridTraveler(w, h));
         }
-
     }
 }
