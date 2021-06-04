@@ -21,8 +21,10 @@ namespace DynamicProgramming.SumProblems.HowSum
     /// for a thorough explanation of the algorithm.
     /// </para>
     /// <para>
-    /// This class implements a brute force approach with O(n^m) time and O(m) space,
-    /// where m = target sum and n = array length.</para>
+    /// This class implements a brute force approach in O(n^m) time and O(m) space,
+    /// where m = target sum and n = array length. The time complexity differs from the 
+    /// example in the video (which is O(n^m * m) because this implementation uses a <c>List</c> 
+    /// instead of repeatedly unpacking the result array.</para>
     /// </summary>
     public class BruteForceHowSum : IHowSum
     {
