@@ -1,4 +1,4 @@
-﻿using Fibonacci;
+﻿using DynamicProgramming.Fibonacci;
 using System;
 
 namespace DynamicProgrammingProblems
