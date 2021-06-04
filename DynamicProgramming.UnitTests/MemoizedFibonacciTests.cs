@@ -1,7 +1,6 @@
 ﻿using DynamicProgramming.Fibonacci;
 using Xunit;
 
-
 namespace DynamicProgramming.UnitTests
 {
     public class MemoizedFibonacciTests
@@ -26,10 +25,11 @@ namespace DynamicProgramming.UnitTests
         [Theory]
         [InlineData(0, 0)]
         [InlineData(3, 2)]
-        [InlineData(4, 3)]
-        [InlineData(5, 5)]
         [InlineData(6, 8)]
-        public void MemoizedFibonacci_Calculates_Correctly(int n, int expected)
+        [InlineData(7, 13)]
+        [InlineData(8, 21)]
+        [InlineData(50, 12586269025)]
+        public void MemoizedFibonacci_Calculates_Correctly(long n, long expected)
         {
             var testee = new MemoizedFibonacci();
             Assert.Equal(expected, testee.Fib(n));

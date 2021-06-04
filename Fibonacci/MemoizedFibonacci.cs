@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DynamicProgramming.Fibonacci
 {
@@ -12,17 +8,17 @@ namespace DynamicProgramming.Fibonacci
     /// </summary>
     public class MemoizedFibonacci : FibonacciBase
     {
-        private Dictionary<int, int> _lookup;
+        private Dictionary<long, long> _lookup;
 
         public MemoizedFibonacci()
         {
-            _lookup = new Dictionary<int, int>();
+            _lookup = new Dictionary<long, long>();
         }
         
         /// <inheritdoc />
-        public override int Fib(int n)
+        public override long Fib(long n)
         {
-            int value = BaseCase(n);
+            long value = BaseCase(n);
 
             if (value > -1)
             {

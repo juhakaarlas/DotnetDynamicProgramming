@@ -19,7 +19,7 @@ namespace DynamicProgramming.UnitTests
             Assert.Equal(0, BaseCase(0));
         }
 
-        public override int Fib(int n)
+        public override long Fib(long n)
         {
             throw new System.NotImplementedException();
         }
