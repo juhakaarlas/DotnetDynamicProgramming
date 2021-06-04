@@ -2,6 +2,10 @@
 
 namespace DynamicProgramming.GridTraveler
 {
+    /// <summary>
+    /// This class implements a non-naive grid travel path calculator with memoization.
+    /// Returns in O(w*h) time and O(w+h) space.
+    /// </summary>
     public class MemoizedGridTraveler : GridTravelerBase
     {
         private Dictionary<string, long> _lookup;
