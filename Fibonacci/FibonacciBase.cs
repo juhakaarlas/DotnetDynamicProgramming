@@ -2,6 +2,10 @@
 
 namespace DynamicProgramming.Fibonacci
 {
+    /// <summary>
+    /// This class provides common functionality for checking the Fibonacci series base cases.
+    /// You can inherit this to avoid duplicating the boilerplate if statements.
+    /// </summary>
     public abstract class FibonacciBase : IFibonacci
     {
         /// <summary>
