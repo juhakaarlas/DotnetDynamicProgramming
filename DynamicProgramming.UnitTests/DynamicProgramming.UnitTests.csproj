@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DynamicProgramming.CanSum\DynamicProgramming.CanSum.csproj" />
+    <ProjectReference Include="..\DynamicProgramming.Fibonacci\DynamicProgramming.Fibonacci.csproj" />
     <ProjectReference Include="..\DynamicProgramming.GridTraveler\DynamicProgramming.GridTraveler.csproj" />
-    <ProjectReference Include="..\Fibonacci\DynamicProgramming.Fibonacci.csproj" />
+    <ProjectReference Include="..\DynamicProgramming.SumProblems\DynamicProgramming.SumProblems.csproj" />
   </ItemGroup>
 
 </Project>
