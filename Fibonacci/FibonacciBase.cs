@@ -17,7 +17,7 @@ namespace DynamicProgramming.Fibonacci
         protected int BaseCase(long n)
         {
             //We don't suppport the generalized series
-            if (n < 0) throw new ArgumentOutOfRangeException();
+            if (n < 0) throw new ArgumentOutOfRangeException("Argument must be non-negative.");
 
             //Base case according to the generally accepted axiom of F(0) = 0
             if (n == 0)
