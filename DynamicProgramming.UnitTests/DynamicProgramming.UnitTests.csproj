@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DynamicProgramming.GridTraveler\DynamicProgramming.GridTraveler.csproj" />
     <ProjectReference Include="..\Fibonacci\DynamicProgramming.Fibonacci.csproj" />
   </ItemGroup>
 
