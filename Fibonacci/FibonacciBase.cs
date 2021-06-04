@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DynamicProgramming.Fibonacci
 {
@@ -14,7 +10,7 @@ namespace DynamicProgramming.Fibonacci
         /// </summary>
         /// <param name="n">The Nth number in the Fibonacci series to check.</param>
         /// <returns>The value of the Fibonacci number, if <paramref name="n"/> was a base case. Otherwise -1.</returns>
-        protected int BaseCase(int n)
+        protected int BaseCase(long n)
         {
             //We don't suppport the generalized series
             if (n < 0) throw new ArgumentOutOfRangeException();
@@ -35,6 +31,6 @@ namespace DynamicProgramming.Fibonacci
         }
 
         /// <inheritdoc />
-        public abstract int Fib(int n);
+        public abstract long Fib(long n);
     }
 }

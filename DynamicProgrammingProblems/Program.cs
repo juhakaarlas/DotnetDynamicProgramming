@@ -13,7 +13,7 @@ namespace DynamicProgrammingProblems
             Console.WriteLine("Starting Brute Force Fibonacci for n={0}...", n);
             
             var fibo = new BruteForceFibonacci();
-            int result = fibo.Fib(n);
+            long result = fibo.Fib(n);
 
             Console.Out.WriteLine("The result is {0}", result);
 

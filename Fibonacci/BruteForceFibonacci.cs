@@ -9,7 +9,7 @@ namespace DynamicProgramming.Fibonacci
     public class BruteForceFibonacci : FibonacciBase
     {
         /// <inheritdoc />
-        public override int Fib(int n)
+        public override long Fib(long n)
         {
             //Leaving the duplicate code here as an intro instead of utilizing the 
             //We don't suppport the generalized series
