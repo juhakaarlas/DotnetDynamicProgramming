@@ -24,7 +24,7 @@ namespace DynamicProgramming.UnitTests.CanSum
 
         [Theory]
         [InlineData(7, new int[]{2, 4})]
-        public void BruteForceCanSum_Calculates_True_Examples_Correctly(long targetSum, int[] numbers)
+        public void BruteForceCanSum_Calculates_False_Examples_Correctly(long targetSum, int[] numbers)
         {
             var testee = new BruteForceCanSum();
             Assert.False(testee.CanSum(targetSum, numbers));
@@ -33,7 +33,7 @@ namespace DynamicProgramming.UnitTests.CanSum
         [Theory]
         [InlineData(7, new int[] { 2, 3 })]
         [InlineData(8, new int[] { 2, 3, 5 })]
-        public void BruteForceCanSum_Calculates_False_Examples_Correctly(long targetSum, int[] numbers)
+        public void BruteForceCanSum_Calculates_True_Examples_Correctly(long targetSum, int[] numbers)
         {
             var testee = new BruteForceCanSum();
             Assert.True(testee.CanSum(targetSum, numbers));
