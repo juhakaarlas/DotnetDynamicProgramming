@@ -13,9 +13,12 @@
     /// <para>
     /// You may use an element of the array as many times as needed.
     /// You may assume that all input numbers are non-negative.
-    /// </para>
     /// Check the <seealso href="https://youtu.be/oBt53YbR9Kk?t=4199">video from freeCodeCamp.org</seealso>
     /// for a thorough explanation of the algorithm.
+    /// </para>
+    /// <para>
+    /// This class implements a brute force approach with O(n^m) time and O(m) space,
+    /// where m = target sum and n = array length.</para>
     /// </summary>
     public class BruteForceCanSum : ICanSum
     {
