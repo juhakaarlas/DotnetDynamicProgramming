@@ -5,7 +5,6 @@ namespace DynamicProgramming.UnitTests
 {
     public class MemoizedFibonacciTests
     {
-
         [Fact]
         public void BruteForceFibonacci_Returns_Base_Cases()
         {
