@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Fibonacci\DynamicProgramming.Fibonacci.csproj" />
+    <ProjectReference Include="..\DynamicProgramming.Fibonacci\DynamicProgramming.Fibonacci.csproj" />
   </ItemGroup>
 
 </Project>
