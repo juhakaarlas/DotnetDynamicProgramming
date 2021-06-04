@@ -24,12 +24,14 @@ namespace DynamicProgramming.SumProblems.HowSum
     /// This class implements a brute force approach with O(n^m) time and O(m) space,
     /// where m = target sum and n = array length.</para>
     /// </summary>
-    public class BruteForceHowSum
+    public class BruteForceHowSum : IHowSum
     {
+
+        /// <inheritdoc/>
         public List<int> HowSum(long targetSum, int[] numbers)
         {
             if (targetSum == 0) return new List<int>();
-            
+
             if (targetSum < 0) return null;
 
             foreach (int num in numbers)
