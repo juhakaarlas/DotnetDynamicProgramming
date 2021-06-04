@@ -3,7 +3,7 @@
     interface IGridTraveler
     {
         /// <summary>
-        /// Given an w * n grid, 
+        /// Given an w * h grid, 
         /// when starting from the top left square, 
         /// and the allowed movements are one square down or one square right,
         /// returns the number of possible paths to the bottom right corner.
