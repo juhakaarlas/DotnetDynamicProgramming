@@ -1,13 +1,12 @@
-using DynamicProgramming.Fibonacci;
 using System;
 using Xunit;
 
-namespace DynamicProgramming.UnitTests
+namespace DynamicProgramming.Fibonacci.Tests
 {
     public class BruteForceFibonacciTests
     {
         [Fact]
-        public void BruteForceFibonacci_Returns_Base_Cases()
+        public void Returns_Base_Cases_Correctly()
         {
             var testee = new BruteForceFibonacci();
 
@@ -16,14 +15,14 @@ namespace DynamicProgramming.UnitTests
         }
 
         [Fact]
-        public void BruteForceFibonacci_Handles_Zero()
+        public void Returns_Zero_Correctly()
         {
             var testee = new BruteForceFibonacci();
             Assert.Equal(0, testee.Fib(0));
         }
 
         [Fact]
-        public void BruteForceFibonacci_Negatives_Throw_ArgumentException()
+        public void Negatives_Throw_ArgumentException()
         {
             var testee = new BruteForceFibonacci();
             Assert.Throws<ArgumentOutOfRangeException>( () => testee.Fib(-1));
@@ -35,7 +34,7 @@ namespace DynamicProgramming.UnitTests
         [InlineData(4, 3)]
         [InlineData(5, 5)]
         [InlineData(6, 8)]
-        public void BruteForceFibonacci_Calculates_Correctly(int n, int expected)
+        public void Calculates_Examples_Correctly(int n, int expected)
         {
             var testee = new BruteForceFibonacci();
             Assert.Equal(expected, testee.Fib(n));
