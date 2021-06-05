@@ -1,7 +1,6 @@
-﻿using DynamicProgramming.GridTraveler;
-using Xunit;
+﻿using Xunit;
 
-namespace DynamicProgramming.UnitTests.GridTraveler
+namespace DynamicProgramming.GridTraveler.Tests
 {
     /// <summary>
     /// Test data from <see href=""/>

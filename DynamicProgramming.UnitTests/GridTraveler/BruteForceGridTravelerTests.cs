@@ -1,7 +1,6 @@
-﻿using DynamicProgramming.GridTraveler;
-using Xunit;
+﻿using Xunit;
 
-namespace DynamicProgramming.UnitTests.GridTraveler
+namespace DynamicProgramming.GridTraveler.Tests
 {
     /// <summary>
     /// Test dataset from <see href="https://youtu.be/oBt53YbR9Kk?t=2958">freeCodeCamp.org video</see>.

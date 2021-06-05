@@ -1,8 +1,7 @@
-﻿using DynamicProgramming.GridTraveler;
-using System;
+﻿using System;
 using Xunit;
 
-namespace DynamicProgramming.UnitTests.GridTraveler
+namespace DynamicProgramming.GridTraveler.Tests
 {
     public class GridTravelerBaseTests : GridTravelerBase
     {
