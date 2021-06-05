@@ -16,6 +16,9 @@ namespace DynamicProgramming.BestSum
     /// If there is a tie for the shortest combination, you may return any
     /// one of the shortest.
     /// </para>
+    /// <para>
+    /// This class implements the algorithm in O(n^m) time and O(m^2)
+    /// where m is the target sum and n is the length of numbers.</para>
     /// </summary>
     public class BruteForceBestSum : IBestSum
     {
