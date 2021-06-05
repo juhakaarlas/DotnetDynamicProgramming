@@ -1,23 +1,25 @@
-﻿using DynamicProgramming.Fibonacci;
-using Xunit;
+﻿using Xunit;
 
-namespace DynamicProgramming.UnitTests
+namespace DynamicProgramming.Fibonacci.Tests
 {
+    /// <summary>
+    /// Test dataset from <see href="https://youtu.be/oBt53YbR9Kk?t=1897">freeCodeCampl.org</see>
+    /// </summary>
     public class MemoizedFibonacciTests
     {
         [Fact]
-        public void BruteForceFibonacci_Returns_Base_Cases()
+        public void Returns_Base_Cases_Correctly()
         {
-            var testee = new BruteForceFibonacci();
+            var testee = new MemoizedFibonacci();
 
             Assert.Equal(1, testee.Fib(1));
             Assert.Equal(1, testee.Fib(2));
         }
 
         [Fact]
-        public void BruteForceFibonacci_Handles_Zero()
+        public void Returns_Zero_Correctly()
         {
-            var testee = new BruteForceFibonacci();
+            var testee = new MemoizedFibonacci();
             Assert.Equal(0, testee.Fib(0));
         }
 
@@ -28,7 +30,7 @@ namespace DynamicProgramming.UnitTests
         [InlineData(7, 13)]
         [InlineData(8, 21)]
         [InlineData(50, 12586269025)]
-        public void MemoizedFibonacci_Calculates_Correctly(long n, long expected)
+        public void Calculates_Examples_Correctly(long n, long expected)
         {
             var testee = new MemoizedFibonacci();
             Assert.Equal(expected, testee.Fib(n));
