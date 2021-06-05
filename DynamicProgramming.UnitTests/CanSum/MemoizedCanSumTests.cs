@@ -39,5 +39,21 @@ namespace DynamicProgramming.CanSum.Tests
             var testee = new MemoizedCanSum();
             Assert.True(testee.CanSum(targetSum, numbers));
         }
+
+        [Fact]
+        public void Same_Input_Produces_Consistent_Results()
+        {
+            int[] numbersFor8 = new int[] { 2, 3, 5 };
+            int[] numbersFor7 = new int[] { 3, 4, 5, 7 };
+            var testee = new MemoizedCanSum();
+
+            bool first8Result = testee.CanSum(8, numbersFor8);
+            bool sevenResult = testee.CanSum(7, numbersFor7);
+            bool second8Result = testee.CanSum(8, numbersFor8);
+
+            Assert.True(first8Result);
+            Assert.True(sevenResult);
+            Assert.True(second8Result);
+        }
     }
 }
