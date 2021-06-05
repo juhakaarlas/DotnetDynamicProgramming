@@ -8,14 +8,14 @@ namespace DynamicProgramming.CanSum.Tests
     public class BruteForceCanSumTests
     {
         [Fact]
-        public void BruteForceCanSum_Handles_Zero_TargetSum()
+        public void Handles_Zero_TargetSum()
         {
             var testee = new BruteForceCanSum();
             Assert.True(testee.CanSum(0, null));
         }
 
         [Fact]
-        public void BruteForceCanSum_Handles_Negative_TargetSum()
+        public void Handles_Negative_TargetSum()
         {
             var testee = new BruteForceCanSum();
             Assert.False(testee.CanSum(-1, null));
@@ -23,7 +23,7 @@ namespace DynamicProgramming.CanSum.Tests
 
         [Theory]
         [InlineData(7, new int[]{2, 4})]
-        public void BruteForceCanSum_Calculates_False_Examples_Correctly(long targetSum, int[] numbers)
+        public void Calculates_False_Examples_Correctly(long targetSum, int[] numbers)
         {
             var testee = new BruteForceCanSum();
             Assert.False(testee.CanSum(targetSum, numbers));
@@ -32,7 +32,7 @@ namespace DynamicProgramming.CanSum.Tests
         [Theory]
         [InlineData(7, new int[] { 2, 3 })]
         [InlineData(8, new int[] { 2, 3, 5 })]
-        public void BruteForceCanSum_Calculates_True_Examples_Correctly(long targetSum, int[] numbers)
+        public void Calculates_True_Examples_Correctly(long targetSum, int[] numbers)
         {
             var testee = new BruteForceCanSum();
             Assert.True(testee.CanSum(targetSum, numbers));
