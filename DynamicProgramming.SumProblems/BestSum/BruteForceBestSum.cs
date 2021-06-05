@@ -17,11 +17,37 @@ namespace DynamicProgramming.BestSum
     /// one of the shortest.
     /// </para>
     /// </summary>
-    public class BruteForceBestSum
+    public class BruteForceBestSum : IBestSum
     {
+        /// <inheritdoc/>
         public List<int> BestSum(int targetSum, int[] numbers)
         {
-            return null;
+            if (targetSum == 0) return new List<int>();
+
+            if (targetSum < 0) return null;
+
+            List<int> shortestCombo = null;
+
+            foreach (int num in numbers)
+            {
+                int remainder = targetSum - num;
+                var remainderCombination = BestSum(remainder, numbers);
+
+                if (remainderCombination != null)
+                {
+                    (remainderCombination ??= new List<int>()).Add(num);
+
+                    shortestCombo ??= remainderCombination;
+                    
+                    //if the combination is shorter than the current best, update it
+                    if (remainderCombination.Count < shortestCombo.Count)
+                    {
+                        shortestCombo = remainderCombination;
+                    }
+                }
+            }
+
+            return shortestCombo;
         }
     }
 }
