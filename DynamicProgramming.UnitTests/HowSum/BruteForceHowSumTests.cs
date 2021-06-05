@@ -10,7 +10,7 @@ namespace DynamicProgramming.SumProblems.HowSum.Tests
     {
         [Theory]
         [InlineData(7, new int[] { 2, 4 })]
-        public void HowSum_Returns_Null_When_No_Solution_Exists(int targetSum, int[] numbers)
+        public void Returns_Null_When_No_Solution_Exists(int targetSum, int[] numbers)
         {
             var testee = new BruteForceHowSum();
 
@@ -21,7 +21,7 @@ namespace DynamicProgramming.SumProblems.HowSum.Tests
         [InlineData(7, new int[] { 2, 3 }, new int[] { 3, 2, 2 })]
         [InlineData(7, new int[] { 5, 3, 4, 7 }, new int[] { 4, 3 })]
         [InlineData(8, new int[] { 2, 3, 5 }, new int[] { 2, 2, 2, 2 })]
-        public void HowSum_Calculates_Examples_Correctly(int targetSum, int[] numbers, int[] expected)
+        public void Calculates_Examples_Correctly(int targetSum, int[] numbers, int[] expected)
         {
             var expectedResult = new List<int>(expected);
             var testee = new BruteForceHowSum();
