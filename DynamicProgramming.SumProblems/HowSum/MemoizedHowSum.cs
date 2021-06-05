@@ -15,6 +15,7 @@ namespace DynamicProgramming.SumProblems.HowSum
         {
             _memo = new Dictionary<long, List<int>>();
         }
+
         /// <inheritdoc/>
         public List<int> HowSum(long targetSum, int[] numbers)
         {
