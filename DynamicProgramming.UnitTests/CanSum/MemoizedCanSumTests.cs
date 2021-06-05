@@ -1,8 +1,6 @@
-﻿using DynamicProgramming.CanSum;
-using Xunit;
+﻿using Xunit;
 
-
-namespace DynamicProgramming.UnitTests.CanSum
+namespace DynamicProgramming.CanSum.Tests
 {
     public class MemoizedCanSumTests
     {

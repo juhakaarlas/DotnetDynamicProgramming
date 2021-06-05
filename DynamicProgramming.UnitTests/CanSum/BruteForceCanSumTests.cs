@@ -1,7 +1,6 @@
-﻿using DynamicProgramming.CanSum;
-using Xunit;
+﻿using Xunit;
 
-namespace DynamicProgramming.UnitTests.CanSum
+namespace DynamicProgramming.CanSum.Tests
 {
     /// <summary>
     /// Test dataset from <see href="https://youtu.be/oBt53YbR9Kk?t=4921">freeCodeCamp.org</see>.
