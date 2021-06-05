@@ -1,19 +1,18 @@
-﻿using DynamicProgramming.Fibonacci;
-using Xunit;
+﻿using Xunit;
 
-namespace DynamicProgramming.UnitTests
+namespace DynamicProgramming.Fibonacci.Tests
 {
     public class FibonacciBaseTests : FibonacciBase
     {
         [Fact]
-        public void BaseFibonacci_Returns_Base_Cases()
+        public void Returns_Base_Cases_Correctly()
         {
             Assert.Equal(1, BaseCase(1));
             Assert.Equal(1, BaseCase(2));
         }
 
         [Fact]
-        public void BaseFibonacci_Handles_Zero()
+        public void Returns_Zero_Correctly()
         {
             var testee = new BruteForceFibonacci();
             Assert.Equal(0, BaseCase(0));
