@@ -35,5 +35,16 @@ namespace DynamicProgramming.Fibonacci.Tests
             var testee = new MemoizedFibonacci();
             Assert.Equal(expected, testee.Fib(n));
         }
+
+        [Fact]
+        public void Returns_Consistent_Results_For_Same_Input()
+        {
+            var testee = new MemoizedFibonacci();
+
+            var firstResult = testee.Fib(4);
+            var secondResult = testee.Fib(4);
+
+            Assert.Equal(firstResult, secondResult);
+        }
     }
 }
