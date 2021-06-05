@@ -26,7 +26,6 @@ namespace DynamicProgramming.BestSum
         public List<int> BestSum(int targetSum, int[] numbers)
         {
             if (targetSum == 0) return new List<int>();
-
             if (targetSum < 0) return null;
 
             List<int> shortestCombo = null;
@@ -38,7 +37,7 @@ namespace DynamicProgramming.BestSum
 
                 if (remainderCombination != null)
                 {
-                    (remainderCombination ??= new List<int>()).Add(num);
+                    remainderCombination.Add(num);
 
                     shortestCombo ??= remainderCombination;
                     

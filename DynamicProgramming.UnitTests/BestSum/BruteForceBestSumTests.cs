@@ -10,9 +10,15 @@ namespace DynamicProgramming.BestSum.Tests
     public class BruteForceBestSumTests
     {
         [Fact]
-        public void BestSumTest()
+        public void Handles_Base_Cases()
         {
-            Assert.True(false, "This test needs an implementation");
+            var testee = new BruteForceBestSum();
+            
+            var shouldBeNull = testee.BestSum(-1, null);
+            var shouldBeZero = testee.BestSum(0, null);
+
+            Assert.Null(shouldBeNull);
+            shouldBeZero.Should().BeEquivalentTo(new List<int>());
         }
 
         [Theory]
@@ -26,6 +32,5 @@ namespace DynamicProgramming.BestSum.Tests
 
             expectedList.Should().BeEquivalentTo(testee.BestSum(targetSum, numbers));
         }
-
     }
 }
