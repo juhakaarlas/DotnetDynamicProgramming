@@ -1,13 +1,10 @@
 ﻿using Xunit;
-using DynamicProgramming.ConstructProblems;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DynamicProgramming.ConstructProblems.Tests
 {
+    /// <summary>
+    /// Test data set from <see href="https://youtu.be/oBt53YbR9Kk?t=8908">freeCodeCamp.org</see>. 
+    /// </summary>
     public class MemoizedCanConstructTests
     {
         [Theory]
