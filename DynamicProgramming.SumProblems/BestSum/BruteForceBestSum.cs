@@ -19,6 +19,7 @@ namespace DynamicProgramming.BestSum
     /// <para>
     /// This class implements the algorithm in O(n^m) time and O(m^2)
     /// where m is the <c>targetSum</c> and n is the length of <c>numbers</c>.
+    /// </para>
     /// </summary>
     public class BruteForceBestSum : IBestSum
     {
