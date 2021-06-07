@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DynamicProgramming.ConstructProblems\DynamicProgramming.ConstructProblems.csproj" />
     <ProjectReference Include="..\DynamicProgramming.Fibonacci\DynamicProgramming.Fibonacci.csproj" />
     <ProjectReference Include="..\DynamicProgramming.GridTraveler\DynamicProgramming.GridTraveler.csproj" />
     <ProjectReference Include="..\DynamicProgramming.SumProblems\DynamicProgramming.SumProblems.csproj" />
