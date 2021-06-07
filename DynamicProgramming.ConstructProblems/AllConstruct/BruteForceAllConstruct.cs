@@ -27,8 +27,9 @@ namespace DynamicProgramming.ConstructProblems
     /// where m is the <c>target.Length</c> n <c>wordBank.Length</c>.
     /// </para>
     /// </summary>
-    public class BruteForceAllConstruct
+    public class BruteForceAllConstruct : IAllConstruct
     {
+        /// <inheritdoc />
         public string[][] AllConstruct(string target, string[] wordBank)
         {
             if (string.IsNullOrEmpty(target)) return null;
