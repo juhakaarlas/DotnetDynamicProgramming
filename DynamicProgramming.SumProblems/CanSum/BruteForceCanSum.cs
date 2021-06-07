@@ -32,10 +32,7 @@
             {
                 long remainder = targetSum - num;
 
-                if (CanSum(remainder, numbers))
-                {
-                    return true;
-                }
+                if (CanSum(remainder, numbers)) return true;
             }
 
             return false;

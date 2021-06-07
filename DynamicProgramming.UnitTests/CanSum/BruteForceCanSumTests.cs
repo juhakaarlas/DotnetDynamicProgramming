@@ -31,6 +31,7 @@ namespace DynamicProgramming.CanSum.Tests
 
         [Theory]
         [InlineData(7, new int[] { 2, 3 })]
+        [InlineData(7, new int[] { 3, 4 })]
         [InlineData(8, new int[] { 2, 3, 5 })]
         public void Calculates_True_Examples_Correctly(long targetSum, int[] numbers)
         {
