@@ -17,6 +17,7 @@ namespace DynamicProgramming.ConstructProblems
             _memo = new Dictionary<string, bool>();
         }
 
+        /// <inheritdoc/>
         public bool CanConstruct(string target, string[] wordBank)
         {
             if (_memo.ContainsKey(target)) return _memo[target];

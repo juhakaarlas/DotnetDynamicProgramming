@@ -20,6 +20,7 @@
     /// </summary>
     public class BruteForceCanConstruct : ICanConstruct
     {
+        /// <inheritdoc/>
         public bool CanConstruct(string target, string[] wordBank)
         {
             if (string.IsNullOrEmpty(target)) return true;
