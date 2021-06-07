@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProgramming.Console", "DynamicProgrammingProblems\DynamicProgramming.Console.csproj", "{41A8AB79-9A14-4A86-8B85-C85336D81831}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProgramming.UnitTests", "DynamicProgramming.UnitTests\DynamicProgramming.UnitTests.csproj", "{A5E87AC5-2227-41A2-ADA9-F09F5F8D6077}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProgramming.GridTraveler", "DynamicProgramming.GridTraveler\DynamicProgramming.GridTraveler.csproj", "{EDAEB7D0-AEC5-4A28-ADB8-E7A68EF75E14}"
@@ -19,16 +17,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProgramming.Fibonacc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProgramming.SumProblems", "DynamicProgramming.SumProblems\DynamicProgramming.SumProblems.csproj", "{3B541F5A-CB7E-498E-BB27-8436AE03E05F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProgramming.Console", "DynamicProgramming.Console\DynamicProgramming.Console.csproj", "{6E71DA9F-32CD-4C54-9BD4-D5005C647061}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{41A8AB79-9A14-4A86-8B85-C85336D81831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41A8AB79-9A14-4A86-8B85-C85336D81831}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41A8AB79-9A14-4A86-8B85-C85336D81831}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41A8AB79-9A14-4A86-8B85-C85336D81831}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A5E87AC5-2227-41A2-ADA9-F09F5F8D6077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A5E87AC5-2227-41A2-ADA9-F09F5F8D6077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5E87AC5-2227-41A2-ADA9-F09F5F8D6077}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{3B541F5A-CB7E-498E-BB27-8436AE03E05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B541F5A-CB7E-498E-BB27-8436AE03E05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B541F5A-CB7E-498E-BB27-8436AE03E05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E71DA9F-32CD-4C54-9BD4-D5005C647061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E71DA9F-32CD-4C54-9BD4-D5005C647061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E71DA9F-32CD-4C54-9BD4-D5005C647061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E71DA9F-32CD-4C54-9BD4-D5005C647061}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
