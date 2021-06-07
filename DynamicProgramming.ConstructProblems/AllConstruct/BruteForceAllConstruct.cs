@@ -16,14 +16,14 @@ namespace DynamicProgramming.ConstructProblems
     /// combination that constructs the <c>target</c>.
     /// </para>
     /// <para>*) The <see href="https://youtu.be/oBt53YbR9Kk?t=10083">tutorial</see> describes
-    /// this as a 2D array but in C# it's really a jagged array because the elements,
-    /// or member arrays, can be of different sizes.
+    /// this as a 2D array but in C# it's really a jagged array because the elements
+    /// (or member arrays) can be of different sizes.
     /// </para>
     /// <para>
     /// You may reuse elements of <c>wordBank</c> as many times as needed.
     /// </para>
     /// <para>
-    /// This class implements the algorithm in O() time and O() space
+    /// This class implements the algorithm in O(n^m) time and O(m) space
     /// where m is the <c>target.Length</c> n <c>wordBank.Length</c>.
     /// </para>
     /// </summary>
@@ -52,9 +52,7 @@ namespace DynamicProgramming.ConstructProblems
 
                     foreach (var way in suffixWays)
                     {
-                        var prepone = way.Prepend(word).ToArray();
-                        var appel = result.Append(prepone).ToArray();
-                        result = appel ;
+                        result = result.Append(way.Prepend(word).ToArray()).ToArray();
                     }
                 }
             }
