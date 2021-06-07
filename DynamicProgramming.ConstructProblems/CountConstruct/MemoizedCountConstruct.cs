@@ -3,7 +3,8 @@
 namespace DynamicProgramming.ConstructProblems
 {
     /// <summary>
-    /// This class implements the CountConstruct algorithm in O( ) time and O( ) space.
+    /// This class implements the CountConstruct algorithm in O(n*m^2) time and O(m^2) space.
+    /// where m is the <c>target.Length</c> n <c>wordBank.Length</c>.
     /// </summary>
     public class MemoizedCountConstruct :ICountConstruct
     {
