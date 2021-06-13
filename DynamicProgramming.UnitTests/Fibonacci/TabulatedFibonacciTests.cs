@@ -1,6 +1,4 @@
 ﻿using Xunit;
-using DynamicProgramming.Fibonacci;
-using System;
 
 namespace DynamicProgramming.Fibonacci.Tests
 {
